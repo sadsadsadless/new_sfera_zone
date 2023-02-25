@@ -1,0 +1,169 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-block {
+  cursor: pointer;
+  width: 300px;
+  height: 760px;
+  margin-right: 90px;
+}
+.card-block-botton {
+  margin-top: 640px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+}
+.card-block-top {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 10px auto;
+  border: none;
+  padding: 8px;
+  color: #AD1AAF;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+ 
+}
+#front, 
+#back {
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .4s linear;
+}
+.card-block:hover > #front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card-block:hover > #back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back-one {
+  width: 277px;
+  height: 695px;
+  background-image: url(image/mobile/1-android.png);
+  background-repeat:no-repeat ;
+  transform: rotateY(180deg);
+}
+.front-one {
+  width: 294px;
+  height: 695px;
+  background-image: url(image/mobile/1-ios.png);
+  background-repeat:no-repeat ;
+}
+.back-two {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/2-android.png);
+  background-repeat:no-repeat ;
+  transform: rotateY(180deg);
+}
+.front-two {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/2-ios.png);
+  background-repeat:no-repeat;
+}
+.back-three {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/8-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+  
+}
+.front-three {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/8-ios.png);
+  background-repeat:no-repeat;
+}
+.back-four {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/9-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-four {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/9-ios.png);
+  background-repeat:no-repeat;
+}
+.back-five {
+  width: 278px;
+  height: 595px;
+  background-image: url(image/mobile/5-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-five {
+  width: 290px;
+  height: 595px;
+  background-image: url(image/mobile/5-ios.png);
+  background-repeat:no-repeat;
+}
+.back-six {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/7-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-six {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/7-ios.png);
+  background-repeat:no-repeat;
+}
+.back-seven {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/3-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-seven {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/3-ios.png);
+  background-repeat:no-repeat;
+}
+.back-eight {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/4-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-eight {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/4-ios.png);
+  background-repeat:no-repeat;
+}
+.back-nine {
+  width: 280px;
+  height: 595px;
+  background-image: url(image/mobile/8-android.png);
+  background-repeat:no-repeat;
+  transform: rotateY(180deg);
+}
+.front-nine {
+  width: 294px;
+  height: 595px;
+  background-image: url(image/mobile/8-ios.png);
+  background-repeat:no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .card-block {
+    width: 300px;
+    height: 700px;
+    margin-right: 10px;
+  }
+  
+}
